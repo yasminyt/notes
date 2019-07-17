@@ -83,8 +83,9 @@
 + 迭代出来的元素的顺序和初始加入时一样，即便 key 是数字，而且是乱序的，也保留了初始添加时的顺序，这一点与 object 不同
 + **`map.forEach()`**：map 也有内置的 forEach 方法，和数组类似，也可以实现对元素的遍历
   ```javascript
-  numbers.forEach((key, value) => alert(`${key}: ${value}`))
+  numbers.forEach((value, key) => alert(`${key}: ${value}`))
   ```
+  + ⚠️ 需要注意的是，匿名函数的参数，前一个是 `value`，后一个是 `key`
 
 ## Set
 + set 是值的集合，但是这个集合里每个值都是唯一的，也就是说没有重复值
